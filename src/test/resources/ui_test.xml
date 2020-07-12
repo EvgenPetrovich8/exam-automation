@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke test suite" parallel="methods" thread-count="2">
+
+    <!--<listeners>-->
+        <!--<listener class-name="com.hillel.selenium.auto.listener.MethodListeners"/>-->
+    <!--</listeners>-->
+
+    <test name="Login tests">
+        <classes>
+            <class name=".automation.LogInPageTest"/>
+            <class name=".automation.NewPostPageTest"/>
+        </classes>
+    </test>
+
+</suite>
